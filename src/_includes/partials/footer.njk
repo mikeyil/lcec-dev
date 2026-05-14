@@ -8,8 +8,9 @@
       <polygon points="12,14 8,10 16,10"/>
     </svg>
   </button>
-  <div id="footer-nav-content" class="container">
+  <div class="container">
     <div class="footer-inner">
+      <div id="footer-nav-content" class="footer-nav-wrapper">
       <nav class="footer-nav">
         <ul class="footer-nav__list">
           {% for link in navigation.links %}
@@ -33,6 +34,7 @@
           {% endfor %}
         </ul>
       </nav>
+      </div>
       <hr class="divider">
       <p class="footer-brand"><a href="{{ '/' | url }}">{{ site.name }}</a></p>
       <p class="footer-phone"><a href="{{ office.phone_href }}">{{ office.phone }}</a></p>
