@@ -13,6 +13,9 @@ export default function (eleventyConfig) {
     return new Date(date).toISOString().split("T")[0];
   });
 
+  // Current year for copyright
+  eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+
   // Replace image extension with .webp, e.g. /img/photo.jpg → /img/photo.webp
   eleventyConfig.addFilter("toWebP", function (path) {
     return path.replace(/\.(jpe?g|png|gif)$/i, ".webp");
