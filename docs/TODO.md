@@ -6,8 +6,8 @@ Category tags: `[a11y]` `[seo]` `[optimization]` `[security]` `[content]`
 
 ## Before Launch — Blockers
 
-- [ ] **Custom domain on `lced-prod`** `[seo]` — configure DNS (CNAME/A record pointing to `lauracantagallo.github.io`), then confirm `PATH_PREFIX` repo variable is `/` in `lced-prod`
-- [ ] **Test contact form end-to-end** `[content]` — submit a real entry and confirm Laura receives the email with correct reply-to
+- [x] **Custom domain on `lced-prod`** `[seo]` — DNS configured, PATH_PREFIX set to `/`
+- [x] **Test contact form end-to-end** `[content]` — confirmed working, Laura receives email
 - [ ] **Style 404 page** `[content]`
 - [ ] **Screen reader testing** `[a11y]`
 
@@ -15,7 +15,7 @@ Category tags: `[a11y]` `[seo]` `[optimization]` `[security]` `[content]`
 
 ## Before Launch — Should Do
 
-- [ ] **Google Search Console** `[seo]` — verify ownership by pasting the GSC verification code into `site.json` → `"gscVerificationId"`; then submit the sitemap
+- [x] **Google Search Console** `[seo]` — verified and sitemap submitted
 - [ ] **`og:image`** `[seo]` — currently uses a generic `/img/og-image.png`; a real branded image (1200×630) would improve link previews on LinkedIn, Slack, and iMessage
 - [ ] **Laura's personal LinkedIn** `[seo]` — if she has one, add the URL to the `Person` schema `sameAs` in `head.njk` (or add a `founderLinkedinUrl` field to `site.json`)
 - [ ] **Business hours** `[seo]` — confirm with Laura, then add `openingHoursSpecification` to the `ProfessionalService` schema in `head.njk`

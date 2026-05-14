@@ -5,6 +5,8 @@
 <title>{% if _pageTitle %}{{ _pageTitle }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
 <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
 <meta name="author" content="{{ site.name }}" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+{% if page.url == "/contact-success/" %}<meta name="robots" content="noindex, nofollow" />{% endif %}
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
 <!-- Open Graph -->
@@ -137,5 +139,5 @@
     src: url('{{ "/fonts/lato-700.woff2" | url }}') format('woff2');
   }
 </style>
-<link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
 {% if site.gaId %}<link rel="preconnect" href="https://www.googletagmanager.com" />{% endif %}
+<link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
